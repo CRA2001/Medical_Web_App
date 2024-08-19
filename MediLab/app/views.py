@@ -8,14 +8,14 @@ def index(request):
 
 
 #calendar
-# def calendar(request):
-#     return render()
+def calendar(request):
+    return HttpResponse("Calendar")
 
 # Patients
-# def patients(request):
-#     return render()
+def patients(request):
+    return render(request,"patients.html",{})
 
 # Staff Schedule
-# def staffSched(request):
-#     return render()
+def staffSched(request):
+    return render(request,"staffSched.html",{})
 
