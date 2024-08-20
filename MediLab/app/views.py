@@ -9,7 +9,7 @@ def index(request):
 
 #calendar
 def calendar(request):
-    return HttpResponse("Calendar")
+    return render(request,"calendar.html",{})
 
 # Patients
 def patients(request):

@@ -1,5 +1,7 @@
-<a href="/">
-    <h1> Logo </h1>    
-</a>
 
-</hr>
+<nav>
+    <a href="{% url 'index' %}">Home</a>
+    <a href=" {% url 'staffSched' %} ">Staff Schedule</a>
+    <a href=" {% url 'patients' %}">Patients</a>
+    <a href="{% url 'calendar' %}" >Calendar</a>
+</nav>
