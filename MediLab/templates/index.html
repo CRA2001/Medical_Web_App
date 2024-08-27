@@ -3,13 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medilab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .title-logo{
+        font-weight: bold;
+        font-size:30px;
+        text-align: center;
+        color:#6c93dc;
+        padding-bottom: 50px;
+    }
+    .sidenav{
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .sidenav a{
+        left: 5px;
+        right: 5px;
+        text-decoration: none;
+        color:#6f6f6f;
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display:block;
+        padding-top: 10px;
+        padding-bottom:10px;
+        padding-left:7px;
+    }
+    .sidenav a:hover{
+        background-color: #6c93dc;
+        color: white;
+        border-radius: 10%;
+    }
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+        background-color: #dadada;
+    }
+</style>
 <body>
     {% include 'navbar.html' %}
-    <h1> Medilab</h1>
-    {% block content %}
-    
-    {% endblock %}
+    <div class="main">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
 </body>
 </html>

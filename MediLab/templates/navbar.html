@@ -1,7 +1,10 @@
 
-<nav>
-    <a href="{% url 'index' %}">Home</a>
-    <a href=" {% url 'staffSched' %} ">Staff Schedule</a>
-    <a href=" {% url 'patients' %}">Patients</a>
-    <a href="{% url 'calendar' %}" >Calendar</a>
+<nav class="sidenav">
+    <div class="title-logo">
+        MediLab
+    </div>
+    <a href="{% url 'index' %}"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+    <a href="{% url 'calendar' %}"> <i class="fa-regular fa-calendar-days"></i> Calendar</a>
+    <a href=" {% url 'patients' %}"> <i class="fa-regular fa-user"></i> Patients</a>
+    <a href=" {% url 'staffSched' %} "> <i class="fa-regular fa-clock"></i> Staff Schedule</a>
 </nav>
