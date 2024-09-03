@@ -1,10 +1,16 @@
 
 <nav class="sidenav">
-    <div class="title-logo">
+    <div class="title-logo" href="{% url 'index' %}">
         MediLab
     </div>
-    <a href="{% url 'index' %}"><i class="fa-solid fa-border-all"></i> Dashboard</a>
-    <a href="{% url 'calendar' %}"> <i class="fa-regular fa-calendar-days"></i> Calendar</a>
-    <a href=" {% url 'patients' %}"> <i class="fa-regular fa-user"></i> Patients</a>
-    <a href=" {% url 'staffSched' %} "> <i class="fa-regular fa-clock"></i> Staff Schedule</a>
+    <div class="top-nav">
+        <a class="nav_link" href="{% url 'index' %}"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+        <a class="nav_link" href="{% url 'calendar' %}"> <i class="fa-regular fa-calendar-days"></i> Calendar</a>
+        <a class="nav_link" href=" {% url 'patients' %}"> <i class="fa-regular fa-user"></i> Patients</a>
+        <a class="nav_link" href=" {% url 'staffSched' %} "> <i class="fa-regular fa-clock"></i> Staff Schedule</a>
+    </div>
+    <div class="bottom-nav">
+        <a class="nav_link" href="#"> <i class="fa-regular fa-circle-question"></i> Help Center  </a>
+        <a class="nav_link" href="#"> <i class="fa-solid fa-right-from-bracket"></i> Log out  </a>
+    </div>
 </nav>
