@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import patient,staff,appointment
 
 #dashboard
 def index(request):
@@ -13,7 +14,10 @@ def calendar(request):
 
 # Patients
 def patients(request):
-    return render(request,"patients.html",{})
+    context = {'patients':patient.objects.all()}
+    return render(request,"patients.html",context)
+
+
 
 # Staff Schedule
 def staffSched(request):

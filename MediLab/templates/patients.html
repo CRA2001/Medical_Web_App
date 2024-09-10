@@ -2,4 +2,15 @@
 
 {% block content %}
 <h1>Patients</h1>
+<div class="display-patients">
+    {% for p in patients %}
+
+        <p class="patient-detail">patient ID: {{p.patient_ID}}</p>
+        <p class="patient-detail">name: {{p.first_name}}, {{p.last_name}}</p>
+        <p class="patient-detail">email: {{p.email}}</p>
+        <p class="patient-detail">contact number:{{p.phone}}</p>
+
+
+    {% endfor %}
+</div>
 {% endblock %}
